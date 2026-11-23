@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vero Odontologia | Dentista em Vila Pires, Santo André</title>
+  <meta name="description" content="Vero Odontologia, em Vila Pires, Santo André: clareamento, implantes, ortodontia, limpeza e avaliação. Agende sua consulta.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- ÍCONES (use com <svg class="icone"><use href="#i-nome"/></svg>) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-dente" viewBox="0 0 24 24">
+      <path pathLength="1" d="M12 5.5c-1.4-1.3-4-2-5.6-1C4.7 5.6 4.5 8 5 10c.6 2.3 1.4 3.6 1.7 6 .3 2.3.8 5 2.2 5 1.2 0 1.4-2.2 1.9-4 .2-.8.6-1.4 1.2-1.4s1 .6 1.2 1.4c.5 1.8.7 4 1.9 4 1.4 0 1.9-2.7 2.2-5 .3-2.4 1.1-3.7 1.7-6 .5-2 .3-4.4-1.4-5.5-1.6-1-4.2-.3-5.6 1z"/>
+    </symbol>
+    <symbol id="i-implante" viewBox="0 0 24 24">
+      <path pathLength="1" d="M6 3h12v3.5a6 6 0 0 1-12 0V3z"/>
+      <path pathLength="1" d="M9 13.5h6M9.5 16.5h5M10 19.5h4M12 19.5V22"/>
+    </symbol>
+    <symbol id="i-sorriso" viewBox="0 0 24 24">
+      <circle pathLength="1" cx="12" cy="12" r="10"/>
+      <path pathLength="1" d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
+    </symbol>
+    <symbol id="i-agenda" viewBox="0 0 24 24">
+      <rect pathLength="1" x="3" y="4" width="18" height="18" rx="2"/>
+      <path pathLength="1" d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/>
+    </symbol>
+    <symbol id="i-escudo" viewBox="0 0 24 24">
+      <path pathLength="1" d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+      <path pathLength="1" d="m9 12 2 2 4-4"/>
+    </symbol>
+    <symbol id="i-brilho" viewBox="0 0 24 24">
+      <path pathLength="1" d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+      <path pathLength="1" d="M20 3v4M22 5h-4M4 17v2M5 18H3"/>
+    </symbol>
+    <symbol id="i-coracao" viewBox="0 0 24 24">
+      <path pathLength="1" d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path pathLength="1" d="M20 10c0 5-5.5 10.2-7.4 11.8a1 1 0 0 1-1.2 0C9.5 20.2 4 15 4 10a8 8 0 0 1 16 0"/>
+      <circle pathLength="1" cx="12" cy="10" r="3"/>
+    </symbol>
+    <symbol id="i-relogio" viewBox="0 0 24 24">
+      <circle pathLength="1" cx="12" cy="12" r="10"/><path pathLength="1" d="M12 6v6l4 2"/>
+    </symbol>
+    <symbol id="i-telefone" viewBox="0 0 24 24">
+      <path pathLength="1" d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
+    </symbol>
+    <symbol id="i-mais" viewBox="0 0 24 24"><path pathLength="1" d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-seta" viewBox="0 0 24 24"><path pathLength="1" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-esq" viewBox="0 0 24 24"><path pathLength="1" d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-dir" viewBox="0 0 24 24"><path pathLength="1" d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-cima" viewBox="0 0 24 24"><path pathLength="1" d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  </svg>
+
+  <!-- CABEÇALHO -->
+  <header class="topo">
+    <!-- LOGO: coloque o arquivo em img/logo.png (se não existir, aparece o dentinho + texto) -->
+    <a href="#inicio" class="logo">
+      <img src="img/logo.png" alt="" onload="this.parentNode.classList.add('tem-logo')" onerror="this.remove()">
+      <span class="logo-pata"><svg class="icone"><use href="#i-dente"/></svg></span>
+      <strong>Vero <b>Odontologia</b></strong>
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-botao" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="menu">
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#contato">Contato</a>
+      <a href="tel:+5511XXXXXXXX" class="botao botao-pequeno">
+        <svg class="icone"><use href="#i-telefone"/></svg> Agendar
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grade">
+        <div class="hero-texto">
+          <p class="selo"><svg class="icone"><use href="#i-pin"/></svg> Vila Pires &middot; Santo André</p>
+          <h1>
+            Seu sorriso mais
+            <span class="rotator" aria-label="saudável, confiante, bonito, branco">
+              <span>saudável</span><span>confiante</span><span>bonito</span><span>branco</span>
+            </span>
+          </h1>
+          <p class="lead">
+            Clareamento, implantes, ortodontia e muito mais, com atenção a cada detalhe
+            do início ao fim do seu tratamento.
+          </p>
+          <div class="hero-botoes">
+            <a href="tel:+5511XXXXXXXX" class="botao">
+              <svg class="icone"><use href="#i-agenda"/></svg> Agendar avaliação
+            </a>
+            <a href="#tratamentos" class="botao botao-claro">
+              Ver tratamentos <svg class="icone"><use href="#i-seta"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <!-- FOTO PRINCIPAL: img/hero.jpg (opcional). Se o arquivo não existir, esta coluna some
+               e o texto do topo fica centralizado sozinho. -->
+          <img class="hero-foto" src="img/hero.jpg" alt="Atendimento na Vero Odontologia"
+               onerror="this.closest('.hero-grade').classList.add('sem-foto'); this.closest('.hero-visual').remove();">
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIXA ROLANDO -->
+    <div class="faixa-wrap" aria-hidden="true">
+      <div class="faixa">
+        <div class="faixa-grupo">
+          <span>Clareamento</span><svg class="icone"><use href="#i-brilho"/></svg>
+          <span>Implantes</span><svg class="icone"><use href="#i-implante"/></svg>
+          <span>Ortodontia</span><svg class="icone"><use href="#i-sorriso"/></svg>
+          <span>Limpeza</span><svg class="icone"><use href="#i-dente"/></svg>
+          <span>Avaliação</span><svg class="icone"><use href="#i-agenda"/></svg>
+          <span>Prevenção</span><svg class="icone"><use href="#i-escudo"/></svg>
+        </div>
+        <div class="faixa-grupo">
+          <span>Clareamento</span><svg class="icone"><use href="#i-brilho"/></svg>
+          <span>Implantes</span><svg class="icone"><use href="#i-implante"/></svg>
+          <span>Ortodontia</span><svg class="icone"><use href="#i-sorriso"/></svg>
+          <span>Limpeza</span><svg class="icone"><use href="#i-dente"/></svg>
+          <span>Avaliação</span><svg class="icone"><use href="#i-agenda"/></svg>
+          <span>Prevenção</span><svg class="icone"><use href="#i-escudo"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRATAMENTOS
+         CONFIRMAR COM A CLÍNICA: ajuste conforme o que a Vero realmente faz. -->
+    <section class="secao" id="tratamentos">
+      <div class="container">
+        <p class="rotulo">O que a gente faz</p>
+        <h2>Tratamentos</h2>
+
+        <div class="grade-cards">
+          <article class="card">
+            <span class="servico-icone"><svg class="icone"><use href="#i-brilho"/></svg></span>
+            <h3>Clareamento dentário</h3>
+            <p>Seu sorriso mais branco e saudável, com acompanhamento profissional.</p>
+            <a class="card-link" href="#contato">Agendar <svg class="icone"><use href="#i-seta"/></svg></a>
+          </article>
+          <article class="card">
+            <span class="servico-icone"><svg class="icone"><use href="#i-implante"/></svg></span>
+            <h3>Implante dentário</h3>
+            <p>A liberdade que você busca para sorrir, comer e falar com confiança.</p>
+            <a class="card-link" href="#contato">Agendar <svg class="icone"><use href="#i-seta"/></svg></a>
+          </article>
+          <article class="card">
+            <span class="servico-icone"><svg class="icone"><use href="#i-sorriso"/></svg></span>
+            <h3>Ortodontia</h3>
+            <p>Alinhamento dos dentes para um sorriso harmônico e uma mordida correta.</p>
+            <a class="card-link" href="#contato">Saber mais <svg class="icone"><use href="#i-seta"/></svg></a>
+          </article>
+          <article class="card">
+            <span class="servico-icone"><svg class="icone"><use href="#i-dente"/></svg></span>
+            <h3>Limpeza e restaurações</h3>
+            <p>Higiene profissional e cuidado com cada dente, do básico ao detalhe.</p>
+            <a class="card-link" href="#contato">Agendar <svg class="icone"><use href="#i-seta"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="secao secao-menta" id="sobre">
+      <div class="container sobre">
+        <!-- FOTOS: img/sobre-1.jpg e img/sobre-2.jpg -->
+        <div class="sobre-fotos" aria-hidden="true">
+          <div class="polaroid p1" style="--img: url('img/sobre-1.jpg')"></div>
+          <div class="polaroid p2" style="--img: url('img/sobre-2.jpg')"></div>
+        </div>
+
+        <div class="sobre-texto">
+          <p class="rotulo">Quem somos</p>
+          <h2>Cuidar do seu sorriso é o nosso trabalho</h2>
+          <p>
+            Na Vero Odontologia, cada paciente é recebido com atenção, escuta e clareza.
+            Explicamos cada etapa do tratamento para você decidir com tranquilidade.
+          </p>
+          <p>
+            Do clareamento ao implante, o objetivo é o mesmo: um sorriso saudável
+            e a confiança de voltar a sorrir sem pensar duas vezes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA (CARROSSEL)
+         Fotos: img/foto-1.jpg até img/foto-6.jpg (clínica, equipe, sorrisos) -->
+    <section class="secao" id="galeria">
+      <div class="container">
+        <p class="rotulo">Conheça o espaço</p>
+        <h2>Galeria</h2>
+
+        <div class="carrossel" id="carrossel" role="region" aria-roledescription="carrossel" aria-label="Fotos da clínica">
+          <div class="car-janela">
+            <div class="car-trilho">
+              <figure class="slide"><div class="slide-foto" style="--img: url('img/foto-1.jpg')"></div></figure>
+              <figure class="slide"><div class="slide-foto" style="--img: url('img/foto-2.jpg')"></div></figure>
+              <figure class="slide"><div class="slide-foto" style="--img: url('img/foto-3.jpg')"></div></figure>
+              <figure class="slide"><div class="slide-foto" style="--img: url('img/foto-4.jpg')"></div></figure>
+              <figure class="slide"><div class="slide-foto" style="--img: url('img/foto-5.jpg')"></div></figure>
+              <figure class="slide"><div class="slide-foto" style="--img: url('img/foto-6.jpg')"></div></figure>
+            </div>
+          </div>
+
+          <button class="car-btn car-prev" type="button" aria-label="Foto anterior"><svg class="icone"><use href="#i-esq"/></svg></button>
+          <button class="car-btn car-next" type="button" aria-label="Próxima foto"><svg class="icone"><use href="#i-dir"/></svg></button>
+
+          <div class="car-rodape">
+            <div class="car-pontos" role="tablist" aria-label="Escolher foto"></div>
+            <div class="car-progresso" aria-hidden="true"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÚVIDAS (NOVA ABA) -->
+    <section class="secao secao-sol" id="duvidas">
+      <div class="container">
+        <p class="rotulo">Tira-dúvidas</p>
+        <h2>Perguntas frequentes</h2>
+        <p class="sub">O que os pacientes mais perguntam antes da primeira consulta.</p>
+
+        <div class="faq">
+          <details name="faq">
+            <summary>Como faço para agendar? <svg class="icone"><use href="#i-mais"/></svg></summary>
+            <p>É só ligar para a clínica no telefone do site, ou clicar em "Agendar" e escolher o melhor horário com a nossa equipe.</p>
+          </details>
+          <details name="faq">
+            <summary>Onde a clínica fica? <svg class="icone"><use href="#i-mais"/></svg></summary>
+            <p>Na R. Martim Afonso de Souza, 375, Vila Pires, Santo André - SP (CEP 09195-230). O mapa completo está na seção de contato.</p>
+          </details>
+          <details name="faq">
+            <summary>Qual o horário de atendimento? <svg class="icone"><use href="#i-mais"/></svg></summary>
+            <p>Às segundas-feiras atendemos das 9h às 18h. Para os demais dias, confirme direto com a clínica pelo telefone.</p>
+          </details>
+          <details name="faq">
+            <summary>O clareamento é para todo mundo? <svg class="icone"><use href="#i-mais"/></svg></summary>
+            <p>Depende do caso. Na avaliação, o dentista examina seus dentes e gengiva e indica se o clareamento é adequado e qual o melhor método.</p>
+          </details>
+          <details name="faq">
+            <summary>Quem pode fazer implante dentário? <svg class="icone"><use href="#i-mais"/></svg></summary>
+            <p>Cada caso é diferente. Por isso, o primeiro passo é uma avaliação, em que explicamos as etapas e o plano de tratamento indicado para você.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO
+         PREENCHER: telefone (procure por XXXX) e horários de terça a domingo ("a confirmar"). -->
+    <section class="secao secao-teal" id="contato">
+      <div class="container contato">
+        <div class="contato-esq">
+          <p class="rotulo">Vem pra cá</p>
+          <h2>Agende sua avaliação</h2>
+          <p>Ligue ou passe na clínica. Vamos entender o seu caso e indicar o melhor caminho para o seu sorriso.</p>
+          <div class="hero-botoes">
+            <a href="tel:+5511XXXXXXXX" class="botao botao-sol">
+              <svg class="icone"><use href="#i-telefone"/></svg> (11) XXXX-XXXX
+            </a>
+            <a href="https://maps.app.goo.gl/pjwPedV2aCRCkDyk6" class="botao botao-contorno" target="_blank" rel="noopener">
+              <svg class="icone"><use href="#i-pin"/></svg> Ver no mapa
+            </a>
+          </div>
+        </div>
+
+        <div class="contato-card">
+          <h3><svg class="icone"><use href="#i-pin"/></svg> Endereço</h3>
+          <p>R. Martim Afonso de Souza, 375<br>Vila Pires, Santo André - SP<br>CEP 09195-230</p>
+
+          <h3><svg class="icone"><use href="#i-relogio"/></svg> Horários</h3>
+          <ul class="horarios">
+            <li><span>Segunda</span><span>9h às 18h</span></li>
+            <li><span>Terça a sexta</span><span>a confirmar</span></li>
+            <li><span>Sábado e domingo</span><span>a confirmar</span></li>
+          </ul>
+        </div>
+
+        <div class="mapa">
+          <iframe
+            title="Mapa com a localização da Vero Odontologia"
+            src="https://www.google.com/maps?q=R.+Martim+Afonso+de+Souza,+375+-+Vila+Pires,+Santo+Andr%C3%A9+-+SP,+09195-230&output=embed&hl=pt-BR"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>&copy; 2026 Vero Odontologia</p>
+    <!-- OBRIGATÓRIO em publicidade odontológica: nome do responsável técnico e CRO -->
+    <p>Responsável técnico: Dr(a). NOME &middot; CRO-SP 00000</p>
+  </footer>
+
+  <!-- BOTÕES FLUTUANTES -->
+  <a href="tel:+5511XXXXXXXX" class="flutuante flutuante-ligar" aria-label="Ligar agora"><svg class="icone"><use href="#i-telefone"/></svg></a>
+  <button type="button" class="flutuante flutuante-topo" aria-label="Voltar ao topo"><svg class="icone"><use href="#i-cima"/></svg></button>
+
+  <script>
+    (function () {
+      var reduzir = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* ============ 1) TUDO APARECE AO ROLAR ============ */
+      var grupos = [
+        '.secao .rotulo', '.secao h2', '.secao .sub',
+        '.card', '.sobre-fotos', '.sobre-texto > *',
+        '.carrossel', '.faq details', '.contato-esq > *', '.contato-card'
+      ];
+      var itens = [], vistos = new Set(), contagem = new Map(), cards = 0;
+
+      grupos.forEach(function (sel) {
+        document.querySelectorAll(sel).forEach(function (el) {
+          if (vistos.has(el)) return;
+          vistos.add(el);
+          var d;
+          if (el.classList.contains('card')) {
+            d = cards++ % 3;                        // escalona por linha
+          } else {
+            d = contagem.get(el.parentNode) || 0;   // escalona entre irmãos
+            contagem.set(el.parentNode, d + 1);
+          }
+          el.classList.add('anim');
+          el.style.setProperty('--d', d);
+          itens.push(el);
+        });
+      });
+
+      function mostrar(el) {
+        el.classList.add('visivel');
+        setTimeout(function () { el.classList.add('pronto'); }, 1500);
+      }
+
+      if (!('IntersectionObserver' in window)) {
+        itens.forEach(mostrar);
+      } else {
+        var io = new IntersectionObserver(function (entradas) {
+          entradas.forEach(function (e) {
+            if (e.isIntersecting) { mostrar(e.target); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.15 });
+        itens.forEach(function (el) { io.observe(el); });
+      }
+
+      /* ============ 2) CARROSSEL ============ */
+      (function () {
+        var raiz = document.getElementById('carrossel');
+        if (!raiz) return;
+        var janela = raiz.querySelector('.car-janela');
+        var trilho = raiz.querySelector('.car-trilho');
+        var slides = raiz.querySelectorAll('.slide');
+        var pontosBox = raiz.querySelector('.car-pontos');
+        var barra = raiz.querySelector('.car-progresso span');
+        var TEMPO = 4500;                 // tempo entre fotos (ms)
+        var indice = 0, porVez = 3, timer = null, pausado = false;
+
+        function calcPorVez() {
+          var l = window.innerWidth;
+          return l < 640 ? 1 : (l < 980 ? 2 : 3);
+        }
+        function maximo() { return Math.max(0, slides.length - porVez); }
+
+        function montarPontos() {
+          pontosBox.innerHTML = '';
+          for (var i = 0; i <= maximo(); i++) {
+            var b = document.createElement('button');
+            b.type = 'button';
+            b.setAttribute('aria-label', 'Ir para a foto ' + (i + 1));
+            (function (n) { b.addEventListener('click', function () { ir(n, true); }); })(i);
+            pontosBox.appendChild(b);
+          }
+        }
+
+        function atualizar() {
+          trilho.style.transform = 'translateX(' + (-indice * (100 / porVez)) + '%)';
+          var pts = pontosBox.children;
+          for (var i = 0; i < pts.length; i++) pts[i].classList.toggle('ativo', i === indice);
+          slides.forEach(function (s, i) {
+            s.classList.toggle('em-vista', i >= indice && i < indice + porVez);
+          });
+          reiniciarBarra();
+        }
+
+        function reiniciarBarra() {
+          if (!barra) return;
+          barra.style.animation = 'none';
+          void barra.offsetWidth;          // força o reinício
+          if (!reduzir && !pausado) barra.style.animation = 'progresso ' + TEMPO + 'ms linear forwards';
+        }
+
+        function ir(n, manual) {
+          var max = maximo();
+          indice = n > max ? 0 : (n < 0 ? max : n);
+          atualizar();
+          if (manual) agendar();
+        }
+
+        function agendar() {
+          clearTimeout(timer);
+          if (reduzir || pausado) return;
+          timer = setTimeout(function () { ir(indice + 1, false); agendar(); }, TEMPO);
+        }
+
+        raiz.querySelector('.car-prev').addEventListener('click', function () { ir(indice - 1, true); });
+        raiz.querySelector('.car-next').addEventListener('click', function () { ir(indice + 1, true); });
+
+        // pausa quando o mouse está em cima
+        raiz.addEventListener('mouseenter', function () { pausado = true; clearTimeout(timer); reiniciarBarra(); });
+        raiz.addEventListener('mouseleave', function () { pausado = false; atualizar(); agendar(); });
+
+        // arrastar com o dedo / mouse
+        var x0 = null;
+        janela.addEventListener('pointerdown', function (e) { x0 = e.clientX; });
+        janela.addEventListener('pointerup', function (e) {
+          if (x0 === null) return;
+          var dx = e.clientX - x0; x0 = null;
+          if (Math.abs(dx) > 45) ir(indice + (dx < 0 ? 1 : -1), true);
+        });
+        janela.addEventListener('pointercancel', function () { x0 = null; });
+
+        // setas do teclado
+        raiz.setAttribute('tabindex', '0');
+        raiz.addEventListener('keydown', function (e) {
+          if (e.key === 'ArrowLeft') ir(indice - 1, true);
+          if (e.key === 'ArrowRight') ir(indice + 1, true);
+        });
+
+        window.addEventListener('resize', function () {
+          var novo = calcPorVez();
+          if (novo !== porVez) { porVez = novo; indice = Math.min(indice, maximo()); montarPontos(); atualizar(); }
+        });
+
+        porVez = calcPorVez();
+        raiz.style.setProperty('--por-vez', porVez);
+        montarPontos();
+        atualizar();
+        agendar();
+      })();
+
+      /* ============ 3) BOTÃO VOLTAR AO TOPO ============ */
+      (function () {
+        var btn = document.querySelector('.flutuante-topo');
+        if (!btn) return;
+        window.addEventListener('scroll', function () {
+          btn.classList.toggle('mostrar', window.scrollY > 700);
+        }, { passive: true });
+        btn.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: reduzir ? 'auto' : 'smooth' });
+        });
+      })();
+    })();
+  </script>
+
+</body>
+</html>
